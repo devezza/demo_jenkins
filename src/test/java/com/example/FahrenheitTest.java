@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FahrenheitTest {
-    private Conversor convTest;
+    private Conversor convTest= new Conversor('F', 32);
 
     @BeforeEach
     public void setup(){
@@ -16,6 +16,7 @@ public class FahrenheitTest {
     @Test
     public void testFahreinheitCelsius(){
         convTest.converte('C');
+        System.out.println(convTest);
         assertEquals(convTest.getTemp().getEscala(), 'C');
         assertEquals(convTest.getTemp().getTemperatura(),0.00);
     }

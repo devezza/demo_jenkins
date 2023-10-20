@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CelsisusTest {
-    private Conversor convTest;
+    private Conversor convTest = new Conversor('C', 10);
 
     @BeforeEach
     public void setup(){
@@ -15,7 +15,9 @@ public class CelsisusTest {
 
     @Test
     public void testCelsiusFahreinheit(){
+        System.out.println("Valor de convTest:" + convTest);
         convTest.converte('F');
+        System.out.println("Saindaaaa" + convTest.getTemp().getEscala());
         assertEquals(convTest.getTemp().getEscala(), 'F');
         assertEquals(convTest.getTemp().getTemperatura(),50.00);
     }

@@ -17,6 +17,8 @@ public class Conversor {
         tempCelsius = this.getTemp().getTemperatura();
         tempFahreinheit = (1.8 * tempCelsius +32.0);
 
+        System.out.println(tempFahreinheit);
+
         this.getTemp().setEscala('F');
         this.getTemp().setTemperatura(tempFahreinheit);
     }
@@ -27,6 +29,7 @@ public class Conversor {
         tempFahreinheit = this.getTemp().getTemperatura();
         tempCelsius = (tempFahreinheit - 32.0)/1.8;
 
+        System.out.println(tempCelsius);
         this.getTemp().setEscala('C');
         this.getTemp().setTemperatura(tempCelsius);
     }
