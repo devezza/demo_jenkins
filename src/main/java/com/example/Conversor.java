@@ -26,7 +26,7 @@ public class Conversor {
     public void fahrenheitCelsius(){
         double tempCelsius, tempFahreinheit;
 
-        tempFahreinheit = this.getTemp().getTemperatura();
+        tempFahreinheit = this.getTemp().getTemperatura()
         tempCelsius = (tempFahreinheit - 32.0)/1.8;
 
         System.out.println(tempCelsius);
