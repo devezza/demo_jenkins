@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FahrenheitTest {
-    private Conversor convTest= new Conversor('F', 32);
+    private Conversor convTest= new Conversor('F', 0);
 
     @BeforeEach
     public void setup(){
