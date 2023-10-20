@@ -21,3 +21,4 @@ public class FahrenheitTest {
         assertEquals(convTest.getTemp().getTemperatura(),0.00);
     }
 }
+    
