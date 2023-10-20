@@ -2,16 +2,10 @@ package com.example;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FahrenheitTest {
-    private Conversor convTest= new Conversor('F', 0);
-
-    @BeforeEach
-    public void setup(){
-        convTest = new Conversor('F', 32);
-    }
+    private Conversor convTest= new Conversor('F', 32);
 
     @Test
     public void testFahreinheitCelsius(){
@@ -21,4 +15,3 @@ public class FahrenheitTest {
         assertEquals(convTest.getTemp().getTemperatura(),0.00);
     }
 }
-    
