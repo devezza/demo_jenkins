@@ -15,9 +15,7 @@ public class CelsisusTest {
 
     @Test
     public void testCelsiusFahreinheit(){
-        System.out.println("Valor de convTest:" + convTest);
         convTest.converte('F');
-        System.out.println("Saindaaaa" + convTest.getTemp().getEscala());
         assertEquals(convTest.getTemp().getEscala(), 'F');
         assertEquals(convTest.getTemp().getTemperatura(),50.00);
     }
