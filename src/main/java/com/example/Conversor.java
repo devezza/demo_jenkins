@@ -31,7 +31,7 @@ public class Conversor {
 
         System.out.println(tempCelsius);
         this.getTemp().setEscala('C');
-        this.getTemp().setTemperatura(tempCelsius);
+        this.getTemp().setTemperatura(tempCelsius)
     }
 
     public void converte(char escala){
