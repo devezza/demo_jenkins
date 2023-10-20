@@ -12,6 +12,6 @@ public class FahrenheitTest {
         convTest.converte('C');
         System.out.println(convTest);
         assertEquals(convTest.getTemp().getEscala(), 'C');
-        assertEquals(convTest.getTemp().getTemperatura(),0.00);
+        assertEquals(convTest.getTemp().getTemperatura(),10.00);
     }
 }
